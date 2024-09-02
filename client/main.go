@@ -30,6 +30,7 @@ func main() {
 	utils.LeerConsola()
 	// utils.LeerConsola()
 
+	utils.GenerarYEnviarPaquete()
 	// generamos un paquete y lo enviamos al servidor
 	// utils.GenerarYEnviarPaquete()
 }
