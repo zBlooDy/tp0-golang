@@ -40,7 +40,7 @@ func LeerConsola() {
 	reader := bufio.NewReader(os.Stdin)
 	log.Println("Ingrese los mensajes")
 	for text != "\n" {
-		text, _ := reader.ReadString('\n')
+		text, _ = reader.ReadString('\n')
 		log.Print(text)
 	}
 }
@@ -52,7 +52,7 @@ func GenerarYEnviarPaquete() {
 	reader := bufio.NewReader(os.Stdin)
 	log.Println("Ingrese los mensajes")
 	for text != "\n" {
-		text, _ := reader.ReadString('\n')
+		text, _ = reader.ReadString('\n')
 		log.Print(text)
 		text = text[:len(text)-1]
 		paquete.Valores = append(paquete.Valores, text)
